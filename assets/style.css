@@ -1,5 +1,5 @@
 .container, .header, .logo, .nav, .button, .main, .section1, .button2, .img1, .img2, .img3, .section2, .footer, .logo2, .nav2{
-    border: 1px solid red;
+    
 }
 .container{
     height: 1566px;
@@ -7,6 +7,7 @@
     display:grid;
     grid-template-rows: 69px 80px 1209px 139px 69px;
     grid-template-columns: 80px 1440px 80px;
+    background-color: #106D35;
 }
 .header{
     grid-row: 2 / 3;
@@ -14,6 +15,10 @@
     display:grid;
     grid-template-rows: 1fr 47px 1fr;
     grid-template-columns: 280px 102px 444px 167px 172px 1fr;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
     .logo{
         grid-row: 2 / 3;
@@ -23,9 +28,28 @@
         grid-row: 2 / 3;
         grid-column: 4 / 5;
         }
+        .navname{
+        font-family: 'Inter', sans-serif;
+        font-style: bold;
+        text-decoration: none;
+        margin: 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        }
     .button{
         grid-row: 2 / 3;
         grid-column: 5 / 6;
+        border: none;
+        border-radius: 10px;
+        height: 47px;
+        background-color: #106D35;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
         }
 .main {
     grid-row: 3 / 4;
@@ -33,14 +57,38 @@
     display: grid;
     grid-template-rows: 72px 32px 208px 48px 71px 41px 72px 120px 72px 400px 72px;
     grid-template-columns: 280px 398px 1px 1px 80px 400px 280px;
-}
+    background-color: #59c886;
+}   
     .section1{
         grid-row: 3/4;
         grid-column: 2/3;
+        display: grid;
+        align-content: space-around;
+        }
+        .p1{           
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        color: #FFFFFF;
+        }
+        .p2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: #FFFFFF;
         }
     .button2{
         grid-row: 5/6;
         grid-column: 2/3;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        border-radius: 10px;
+        border: none;
+        background-color: #FFFFFF;
     }
     .img1{
         grid-row: 2/7;
@@ -49,6 +97,41 @@
     .section2{
         grid-row: 8/9;
         grid-column: 2/7;
+        background-color: #106D35;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        align-items: center;
+        justify-items: center;
+    }
+    .s2text{
+        grid-column: 1/2;
+    }
+    .p3{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    .p4{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #F2F2F2;
+    }
+    .button3{
+        grid-column: 3/4;
+        width: 130px;
+        height: 47px;
+        border-radius: 10px;
+        border: none;
+        background-color: #FFFFFF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
     }
     .img2{
         grid-row: 10/11;
@@ -64,12 +147,47 @@
     display:grid;
     grid-template-rows: 58px 19px 61px;
     grid-template-columns: 280px 65px 1fr 212px 280px;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
     .logo2{
         grid-row: 2/3;
         grid-column: 2/3;
+        width: 65px;
+        height: 19px;
     }
     .nav2{
         grid-row: 2/3;
-        grid-column: 4/5;
+        grid-column: 4/6;
+    }
+    .navname2{
+        font-family: 'Inter', sans-serif;
+        font-style: bold;
+        margin: 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    .background1{
+    position: absolute;
+    width: 436.86px;
+    height: 610.36px;
+    left: 34px;
+    top: 14px;
+    }
+    .background2{
+    position: absolute;
+    width: 615.05px;
+    height: 675.27px;
+    left: 821px;
+    top: 19px;
+    }
+    .background3{
+    position: absolute;
+    width: 639.53px;
+    height: 599.88px;
+    left: 784px;
+    top: 583px;
     }
